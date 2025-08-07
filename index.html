@@ -921,25 +921,18 @@
           </div>
 
           <div class="col-lg-6" id="contact-form">
-            <form name="contact" method="POST" data-netlify="true" class="php-email-form"
-            action="/success/" data-netlify-honeypot="bot-field">
-
-             <input name="bot-field" class="d-none">
+            <!-- Updated form -->
+            <form method="POST" action="https://lemonchiffon-magpie-532997.hostingersite.com/mailer/submitform.php" class="php-email-form">
               <div class="row gy-4">
-                
-                <div class="col-md-6" >
-                 <input type="text" name="name"  class="form-control" placeholder="Your Name" required />
-
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required />
                 </div>
                 <div class="col-md-6">
-                  <input type="email" name="email" class="form-control"  placeholder="Your Email" required />                 
+                  <input type="email" name="email" class="form-control" placeholder="Your Email" required />
                 </div>
-             
                 <div class="col-md-12">
-                
                   <textarea name="message" class="form-control" rows="6" placeholder="I want to speak to a member of the team" required></textarea>
                 </div>
-
                 <div class="col-md-12">
                   <p>
                     <button type="submit">Send</button>
@@ -947,6 +940,7 @@
                 </div>
               </div>
             </form>
+            
             
 
           </div>
