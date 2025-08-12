@@ -19,7 +19,25 @@
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff;
 }
-
+   /* My Styles */
+      .gradient-text {
+            background: linear-gradient(135deg, #f97316, #ea580c, #dc2626);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero-pattern {
+            background-image: radial-gradient(circle at 25% 25%, rgba(249, 115, 22, 0.1) 0%, transparent 50%), 
+                              radial-gradient(circle at 75% 75%, rgba(234, 88, 12, 0.1) 0%, transparent 50%);
+        }
+        .card-glow {
+            box-shadow: 0 0 40px rgba(249, 115, 22, 0.1);
+        }
+        .money-icon {
+            background: linear-gradient(135deg, #10b981, #059669);
+            animation: pulse 2s infinite;
+        }
+        /* My Styles */
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;

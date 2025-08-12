@@ -1,791 +1,616 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>Innova Digital Solutions</title>
-  <meta  name="description" content="We transform your business by building websites that reach more people and convert customers">
-  <meta name="keywords" content="graphic design,web design, website design, website builder,web developer,web designer, webdesign, ecommerce website" >
-
-  <!-- Favicons -->
-  <link href="assets/img/logo.png" rel="icon">
-  <!-- <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.3.0/remixicon.css" integrity="sha512-0JEaZ1BDR+FsrPtq5Ap9o05MUwn8lKs2GiCcRVdOH0qDcUcCoMKi8fDVJ9gnG8VN1Mp/vuWw2sMO0SQom5th4g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-  <link href="src/output.css" rel="stylesheet">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova - Turn Your Website Into a Money-Making Machine</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'pulse-slow': 'pulse 3s ease-in-out infinite',
+                        'slide-up': 'slideUp 0.8s ease-out forwards',
+                        'fade-in': 'fadeIn 1s ease-out forwards',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-20px)' }
+                        },
+                        slideUp: {
+                            '0%': { transform: 'translateY(50px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0px)', opacity: '1' }
+                        },
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-3QF3GS20N8"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<body class="bg-gray-50 overflow-x-hidden">
 
-  gtag('config', 'G-3QF3GS20N8');
-</script>
-<body>
-
-  <!-- ======= Header ======= -->
-  <header id="header" class="header fixed-top">
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-
-      <a href="index.html" class="logo d-flex align-items-center">
-        <img src="assets/img/logo.png" alt="" id="logo_image">
-        <span class="text-light">Innova<span id ="logo_image" ></span></span>
-      </a>
-
-      <nav id="navbar" class="navbar">
-        <ul class="" >
-          <li><a class="nav-link scrollto active " href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto text-light" href="#about">About</a></li>
-          <li><a class="nav-link scrollto text-light" href="services.html">Services</a></li>
-          <li><a class="nav-link scrollto text-light" href="portfolio-details.html">Portfolio</a></li>
-          <li><a class="nav-link scrollto text-light" href="pricing.html">Pricing</a></li>
-          <!-- <li><a href="blog.html">Blog</a></li> -->
-          <li><a class="nav-link scrollto text-light" href="#contact">Contact</a></li>
-          <li><a class="getstarted scrollto " href="#contact">Book a Meeting</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle "></i>
-      </nav><!-- .navbar -->
-
-    </div>
-  </header><!-- End Header -->
-<!--  -->
-<!--  -->
-      <!-- Hero Section -->
-      <section id="hero" class="hero section dark-background">
-
-        <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
-  
-        <div class="container d-flex flex-column align-items-center text-light" >
-          <h2 data-aos="fade-up" data-aos-delay="100"  >BUILD. THRIVE. GROW.</h2>
-          <p data-aos="fade-up" data-aos-delay="200" class="text-light">Your business needs growth, its our business to make your business grow.</p>
-          <div class="d-flex  mt-4" data-aos="fade-up" data-aos-delay="300">
-            <a href="pricing.html" class="btn-get-started m-3">Get Started</a>
-            <a href="#about" class="btn-get-started m-3">Learn More</a>
-          </div>
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/80 backdrop-blur-md border-b border-gray-200 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center space-x-2">
+                    <div class="w-10 h-10 bg-gradient-to-br from-orange-400 to-red-500 rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-lg">N</span>
+                    </div>
+                    <span class="text-xl font-bold gradient-text">NOVA</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="services.html" class="text-gray-600 hover:text-orange-500 transition-colors">Services</a>
+                    <a href="#automation" class="text-gray-600 hover:text-orange-500 transition-colors">Automation</a>
+                    <a href="#pricing" class="text-gray-600 hover:text-orange-500 transition-colors">Pricing</a>
+                    <a href="#contact" class="bg-gradient-to-r from-orange-500 to-red-500 text-white px-6 py-2 rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105">
+                        Get Started
+                    </a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-gray-600 hover:text-orange-500">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
         </div>
-  
-      </section><!-- /Hero Section -->
-  
+    </nav>
 
-
-  <main id="main">
-    <!-- ======= About Section ======= -->
-    <section id="about" class="py-5 bg-light">
-      <svg class="position-absolute top-0 start-0 opacity-10 z-n1" width="800" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: translate(-30%, -20%)">
-        <circle cx="400" cy="400" r="400" fill="#0d6efd" />
-      </svg>
-      <div class="container">
-        <div class="row align-items-center g-5">
-          
-          <!-- Text Content -->
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="mb-4">
-              <span class="text-uppercase text-primary fw-bold small">Who We Are</span>
-              <h2 class="display-6 fw-semibold mt-2">
-                Welcome to Innova Digital — where we turn businesses into online success stories.
-              </h2>
-            </div>
-            <p class="lead text-muted">
-              In today's digital age, a strong online presence is no longer optional—it's vital. At Innova Digital, we craft stunning websites that do more than look good—they convert. Our mission? To help you sell more, grow faster, and stand out in the digital world.
-            </p>
-            <div class="mt-4">
-              <a href="#portfolio" class="btn btn-primary btn-lg shadow-sm">
-                View Our Work <i class="bi bi-arrow-right ms-2"></i>
-              </a>
-            </div>
-          </div>
-    
-          <!-- Image Content -->
-          <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="200">
-            <div class="position-relative rounded-4 overflow-hidden shadow-lg">
-              <img src="assets/img/laptop.jpg" alt="Laptop mockup" class="img-fluid w-100 h-auto">
-              <div class="position-absolute top-0 start-0 w-100 h-100 "></div>
-            </div>
-          </div>
-    
-        </div>
-      </div>
-    </section>
-       <p class="text-3xl text-blue-600 font-bold underline">
-    Hello world!
-       </p>
-    <!-- <section id="about" class="about">
-
-      <div class="container" data-aos="fade-up">
-        <div class="row gx-0">
-
-          <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
-            <div class="content">
-              <h3>Who We Are</h3>
-              <h2>Welcome to Innova Digital, where we transform businesses into online success stories. </h2>
-              <p>
-                In today's digital age, having a strong online presence is essential for any business to thrive. As a leading web design agency, we understand the significance of a well-designed website in driving sales and boosting business growth. Allow us to showcase how we can help your business make more sales and improve its overall success.
-              </p>
-            
-            </div>
-          </div>
-
-          <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
-            <img src="assets/img/laptop.jpg" class="img-fluid" alt="">
-          </div>
-
-        </div>
-      </div>
-
-    </section> -->
-    <!-- End About Section -->
-
-    <!-- ======= How We Can Help Section ======= -->
-    <section id="values" class="values">
-
-      <div class="container" data-aos="fade-up">
-
-        <header class="section-header">
-          <!-- <h2>Our Values</h2> -->
-          <p>How a Website Can Help Your Business</p>
-        </header>
-
-        <div class="row">
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="box">
-              <img src="assets/img/value1.png" class="img-fluid" alt="">
-              <h3>Increase Visibility</h3>
-              <p> Websites increase your online visibility and help you reach your target customers faster. </p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
-            <div class="box">
-              <img src="assets/img/value2.png" class="img-fluid" alt="">
-              <h3>Boosts Credibility</h3>
-              <p>Websites make you look more credible and professional. </p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="600">
-            <div class="box">
-              <img src="assets/img/value3.png" class="img-fluid" alt="">
-              <h3>Automation</h3>
-              <p>Websites can help automate some parts of your business such as orders and delivery. .</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section><!-- End Values Section -->
-
-    <!-- ======= Counts Section ======= -->
-    <section id="counts" class="counts">
-      <div class="container" data-aos="fade-up">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4 col-md-6">
-            <div class="count-box">
-              <i class="bi bi-emoji-smile"></i>
-              <div>
-                <span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Years in Business</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div class="count-box">
-              <i class="bi bi-journal-richtext" style="color: #ee6c20;"></i>
-              <div>
-                <span data-purecounter-start="0" data-purecounter-end="4" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Big Brands as Customers</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div class="count-box">
-              <i class="bi bi-headset" style="color: #15be56;"></i>
-              <div>
-                <span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Hours Of Support</p>
-              </div>
-            </div>
-          </div>
-
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center hero-pattern">
+        <div class="absolute inset-0 bg-gradient-to-br from-orange-50 via-white to-red-50"></div>
         
-
+        <!-- Floating Money Icons -->
+        <div class="absolute top-20 left-10 money-icon w-12 h-12 rounded-full flex items-center justify-center animate-float">
+            <span class="text-white text-xl">💰</span>
+        </div>
+        <div class="absolute top-40 right-20 money-icon w-16 h-16 rounded-full flex items-center justify-center animate-float" style="animation-delay: 1s;">
+            <span class="text-white text-2xl">💸</span>
+        </div>
+        <div class="absolute bottom-40 left-20 money-icon w-14 h-14 rounded-full flex items-center justify-center animate-float" style="animation-delay: 2s;">
+            <span class="text-white text-xl">📈</span>
+        </div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="animate-slide-up">
+                <h1 class="text-5xl md:text-7xl font-bold text-gray-900 mb-6 leading-tight">
+                    Turn Your Website Into a 
+                    <span class="gradient-text">Money-Making Machine</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-600 mb-8 max-w-4xl mx-auto leading-relaxed">
+                    We build digital systems that work for you — even when you sleep. 
+                    From beautiful design to intelligent automation, we help your business grow smarter.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <button class="bg-gradient-to-r from-orange-500 to-red-500 text-white px-8 py-4 rounded-full text-lg font-semibold hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+                        Start Making More Money
+                    </button>
+                    <button class="border-2 border-orange-500 text-orange-500 px-8 py-4 rounded-full text-lg font-semibold hover:bg-orange-500 hover:text-white transition-all duration-300">
+                        See How It Works
+                    </button>
+                </div>
+            </div>
         </div>
 
-      </div>
-    </section><!-- End Counts Section -->
-
-    <!-- ======= Features Section ======= -->
-    <section id="features" class="features">
-
-      <div class="container" data-aos="fade-up">
-
-        <header class="section-header">
-          <h2>Features</h2>
-          <p>Here are Some of Our Features</p>
-        </header>
-
-        <div class="row">
-
-          <div class="col-lg-6">
-            <img src="assets/img/features.png" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-6 mt-5 mt-lg-0 d-flex">
-            <div class="row align-self-center gy-4">
-
-              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="200">
-                <div class="feature-box d-flex align-items-center">
-                  <i class="bi bi-check"></i>
-                  <h3> Fully Responsive on All Devices </h3>
-                </div>
-              </div>
-
-              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="300">
-                <div class="feature-box d-flex align-items-center">
-                  <i class="bi bi-check"></i>
-                  <h3>Fast and Unique Design </h3>
-                </div>
-              </div>
-
-              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="400">
-                <div class="feature-box d-flex align-items-center">
-                  <i class="bi bi-check"></i>
-                  <h3>SEO Optimized </h3>
-                </div>
-              </div>
-
-              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="500">
-                <div class="feature-box d-flex align-items-center">
-                  <i class="bi bi-check"></i>
-                  <h3>Functional and Efficient</h3>
-                </div>
-              </div>
-
-              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="600">
-                <div class="feature-box d-flex align-items-center">
-                  <i class="bi bi-check"></i>
-                  <h3>Security  Tight</h3>
-                </div>
-              </div>
-
-              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="700">
-                <div class="feature-box d-flex align-items-center">
-                  <i class="bi bi-check"></i>
-                  <h3>User Friendly</h3>
-                </div>
-              </div>
-
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <div class="w-6 h-10 border-2 border-orange-500 rounded-full flex justify-center">
+                <div class="w-1 h-3 bg-orange-500 rounded-full mt-2 animate-pulse"></div>
             </div>
-          </div>
-
-        </div> <!-- / row -->
-
-      
-
-      </div>
-
-    </section><!-- End Features Section -->
-
-    <!-- ======= Pricing Section ======= -->
-    <!-- End Pricing Section -->
-
-    <!-- ======= F.A.Q Section ======= -->
-    <section id="faq" class="faq">
-
-      <div class="container" data-aos="fade-up">
-
-        <header class="section-header">
-          <h2>F.A.Q</h2>
-          <p>Frequently Asked Questions</p>
-        </header>
-
-        <div class="row">
-          <div class="col-lg-6">
-            <!-- F.A.Q List 1-->
-            <div class="accordion accordion-flush" id="faqlist1">
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
-                    Can my website help increase business sales?
-                  </button>
-                </h2>
-                <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
-                  <div class="accordion-body">
-                    Yes, websites can be optimized for conversion and retention. This increases business sales. 
-                  </div>
-                </div>
-              </div>
-
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">
-                    How long does it take to get a website?
-                  </button>
-                </h2>
-                <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
-                  <div class="accordion-body">
-                    Depends, if it’s a basic  or standard it will take 24-72 hours . But higher plans can take up to 2 weeks.
-                  </div>
-                </div>
-              </div>
-
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-3">
-                    Is payment Made in full ?
-                  </button>
-                </h2>
-                <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
-                  <div class="accordion-body">
-                    We require 50% payment upfront before starting and 50% after completion of the project.
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-
-            <!-- F.A.Q List 2-->
-            <div class="accordion accordion-flush" id="faqlist2">
-
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-1">
-                    Is there a reward for referrals ?
-                  </button>
-                </h2>
-                <div id="faq2-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
-                  <div class="accordion-body">
-                    Definitely, referring someone gives you a 20% discount on your next project.
-                  </div>
-                </div>
-              </div>
-
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-2">
-                    Is there any need for a website when I have a social media page ?
-                  </button>
-                </h2>
-                <div id="faq2-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
-                  <div class="accordion-body">
-                    Yes of course . Your social media page can be closed down anyday. The company can even be sold  or new policy changes can affect your business. Your website helps you set your own rules.
-                  </div>
-                </div>
-              </div>
-
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-3">
-                    Is the information on my website safe ?
-                  </button>
-                </h2>
-                <div id="faq2-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
-                  <div class="accordion-body">
-                    Absolutely, we respect your data and go through great lengths to protect your data and keep it safe.
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
         </div>
-
-      </div>
-
-    </section><!-- End F.A.Q Section -->
-
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio">
-
-      <div class="container" data-aos="fade-up">
-
-        <header class="section-header">
-          <h2>Portfolio</h2>
-          <p>Some of our latest work</p>
-        </header>
-
-        <div class="row" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <!-- Im yet to add other sections -->
-              <!-- <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li> -->
-            </ul>
-          </div>
-        </div>
-
-        <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
-          
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/rb.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Readers Boon</h4>
-                <p>A website for readers </p>
-                <div class="portfolio-links">
-                  <!-- <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="Web 3"><i class="bi bi-plus"></i></a> -->
-                  <a href="https://readersboon.com/" title="More Details"><i class="bi bi-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/innova.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Jaybz Signatures</h4>
-                <p>An ecommerce platform for crochet wears</p>
-                <div class="portfolio-links">
-                  <!-- <a href="assets/img/portfolio/" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 1"><i class="bi bi-plus"></i></a> -->
-                  <a href="https://jaybzsig.com/" title="More Details"><i class="bi bi-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/bkwlstepz.png" class="img-fluid"  alt="">
-              <div class="portfolio-info">
-                <h4>Ecommerce Website  </h4>
-                <p>Ecommerce Website for a Fashion Brand</p>
-                <div class="portfolio-links">
-                  <!-- <a href="assets/img/portfolio/" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 1"><i class="bi bi-plus"></i></a> -->
-                  <a href="https://bkwlstepz.com/" title="More Details"><i class="bi bi-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/campz.png" class="img-fluid"  alt="">
-              <div class="portfolio-info">
-                <h4>Blood Donation Website </h4>
-                <p>Blood donation website for a university</p>
-                <div class="portfolio-links">
-         
-                  <a href="https://lemonchiffon-magpie-532997.hostingersite.com " title="More Details"><i class="bi bi-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-    
-
-        </div>
-
-        <div class="row" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <a href="portfolio-details.html" class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center p-3">
-              <span class="btn view-more-btn">View More<i class="bi bi-arrow-right m-1"></i></span>
-            </a>
-          </div>
-        </div>
-
-
-      </div>
-
     </section>
-    <!-- End Portfolio Section -->
 
-       <!-- ======= Testimonials Section ======= -->
-       <section id="testimonials" class="testimonials"> 
-
-        <div class="container" data-aos="fade-up">
-  
-          <header class="section-header">
-            <h2>Testimonials</h2>
-            <p>What they are saying about us</p>
-          </header>
-  
-          <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="200">
-            <div class="swiper-wrapper">
-            <!-- Start testimonial item -->
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <div class="stars">
-                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                  </div>
-                  <p>
-                    I didnt know websites could be used to increase sales and online presence till innova digital did my website for me 
-                  </p>
-                  <div class="profile mt-auto">
-                    <img src="assets/img/testimonials/" class="testimonial-img" alt="">
-                    <h3>Prince Emmanuel</h3>
-                    <h4>Owner</h4>
-                    <h4>Bkwl Stepz Men's Fashion</h4>
-                  </div>
-                </div> 
-              </div>
-              <!-- End testimonial item -->
-            <!-- Start testimonial item -->
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <div class="stars">
-                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                  </div>
-                  <p>
-                    I'm happy with the website that was made for me by innova digitaltech , it is beautiful, fuctional and has driven up my sales.
-                  </p>
-                  <div class="profile mt-auto">
-                    <img src="assets/img/testimonials/brenda.webp" class="testimonial-img" alt="">
-                    <h3>Joy Brenda</h3>
-                    <h4>Founder</h4>
-                    <h4>Jaybz Signatures</h4>
-                  </div>
-                </div> 
-              </div>
-              <!-- End testimonial item -->
-            <!-- Start testimonial item -->
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <div class="stars">
-                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                  </div>
-                  <p>
-                    One thing that impressed me with the website was the speed at which the website loads.
-                    I also liked the google adsense functionality and the general look of the website. 
-                  </p>
-                  <div class="profile mt-auto">
-                    <img src="assets/img/testimonials/testimonial-1.jpeg" class="testimonial-img" alt="">
-                    <h3>Muna Dobi</h3>
-                    <h4>Editor  &amp; Founder</h4>
-                    <h4>Readers Boon</h4>
-                  </div>
-                </div> 
-              </div>
-              <!-- End testimonial item -->
-  
-               <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <div class="stars">
-                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                  </div>
-                  <p>
-                    The website helped me get more customers and it gave me more credibility. I definitely
-                    recommend your services to anybody that needs a website.
-                  </p>
-                  <div class="profile mt-auto">
-                    <img src="assets/img/testimonials/testimonial-2.jpeg" class="testimonial-img" alt="">
-                    <h3>Stella  Ijeoma</h3>
-                    <h4>Founder</h4>
-                    <h4>Frootaholic</h4>
-                  </div>
-                </div>
-              </div> 
-            </section>
-           
-
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-
-      <div class="container" data-aos="fade-up">
-
-        <header class="section-header">
-          <h2>Contact</h2>
-          <p>Contact Us</p>
-        </header>
-
-        <div class="row gy-4">
-
-          <div class="col-lg-6">
-
-            <div class="row gy-4">
-              <div class="col-md-6">
-                <div class="info-box">
-                  <i class="bi bi-geo-alt"></i>
-                  <h3>Address</h3>
-                  <p>Festac Town<br>Lagos</p>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="info-box">
-                  <i class="bi bi-telephone"></i>
-                  <h3>Call Us</h3>
-                  <p>+234 814 6644 982</p>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="info-box">
-                  <i class="bi bi-envelope"></i>
-                  <h3>Email Us</h3>
-                  <p>innovadigitaldesk@gmail.com</p>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="info-box">
-                  <i class="bi bi-clock"></i>
-                  <h3>Open Hours</h3>
-                  <p>Monday - Saturday<br>9:00AM - 06:00PM</p>
-                </div>
-              </div>
+    <!-- Problem Section -->
+    <section class="py-20 bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                    Your Business Is Losing Money 
+                    <span class="text-red-400">Every Single Day</span>
+                </h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    Most businesses don't just need a website — they need a system that captures, converts, and keeps customers coming back.
+                </p>
             </div>
-
-          </div>
-
-          <div class="col-lg-6" id="contact-form">
-            <!-- Updated form -->
-            <form method="POST" action="https://lemonchiffon-magpie-532997.hostingersite.com/mailer/submitform.php" class="php-email-form">
-              <div class="row gy-4">
-                <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required />
-                </div>
-                <div class="col-md-6">
-                  <input type="email" name="email" class="form-control" placeholder="Your Email" required />
-                </div>
-                <div class="col-md-12">
-                  <textarea name="message" class="form-control" rows="6" placeholder="I want to speak to a member of the team" required></textarea>
-                </div>
-                <div class="col-md-12">
-                  <p>
-                    <button type="submit">Send</button>
-                  </p>
-                </div>
-              </div>
-            </form>
             
-            
-
-          </div>
-
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-gray-800 p-6 rounded-2xl border border-gray-700 hover:border-red-500 transition-all duration-300 transform hover:scale-105">
+                    <div class="w-12 h-12 bg-red-500 rounded-lg flex items-center justify-center mb-4">
+                        <span class="text-2xl">📉</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-red-400">Leads Go Nowhere</h3>
+                    <p class="text-gray-300">Website visitors fill forms and disappear into the void. No follow-up, no conversion.</p>
+                </div>
+                
+                <div class="bg-gray-800 p-6 rounded-2xl border border-gray-700 hover:border-red-500 transition-all duration-300 transform hover:scale-105">
+                    <div class="w-12 h-12 bg-red-500 rounded-lg flex items-center justify-center mb-4">
+                        <span class="text-2xl">⏰</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-red-400">Slow Follow-Up</h3>
+                    <p class="text-gray-300">By the time you respond, your potential customers have already moved on to competitors.</p>
+                </div>
+                
+                <div class="bg-gray-800 p-6 rounded-2xl border border-gray-700 hover:border-red-500 transition-all duration-300 transform hover:scale-105">
+                    <div class="w-12 h-12 bg-red-500 rounded-lg flex items-center justify-center mb-4">
+                        <span class="text-2xl">📧</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-red-400">Sales in Chaos</h3>
+                    <p class="text-gray-300">Important deals get buried in inboxes and WhatsApp chats. Nothing gets tracked properly.</p>
+                </div>
+                
+                <div class="bg-gray-800 p-6 rounded-2xl border border-gray-700 hover:border-red-500 transition-all duration-300 transform hover:scale-105">
+                    <div class="w-12 h-12 bg-red-500 rounded-lg flex items-center justify-center mb-4">
+                        <span class="text-2xl">🔄</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-red-400">Manual Everything</h3>
+                    <p class="text-gray-300">You're stuck doing repetitive tasks that don't scale, instead of growing your business.</p>
+                </div>
+            </div>
         </div>
-
-      </div>
-
     </section>
-    <!-- End Contact Section -->
 
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer" class="footer">
-
-    <div class="footer-newsletter">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-12 text-center">
-            <h4>Our Newsletter</h4>
-            <p>Join Our Newsletter to Recieve Exciting Offers and Business Tips</p>
-          </div>
-          <div class="col-lg-6">
-            <form  name="newsletter" method="POST" data-netlify="true" 
-            action="/success/" data-netlify-honeypot="bot-field" >
-            <input name="bot-field" class="d-none">
-              <input type="email" name="email"  required/><input type="submit" value="Subscribe">
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="footer-top">
-      <div class="container">
-        <div class="row gy-4">
-          <div class="col-lg-5 col-md-12 footer-info">
-            <a href="index.html" class="logo d-flex align-items-center">
-              <img src="assets/img/logo.png" alt="">
-              <span>Innova</span>
-            </a>
-            <!-- <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p> -->
-            <div class="social-links mt-3">
-              <a href="https://twitter.com/innova_digital_?s=11&t=EV6trHogWKsp73m155zlmA
-              " class="twitter"><i class="bi bi-twitter fs-2"></i></a>
-              <!-- <a href="#" class="facebook"><i class="bi bi-facebook"></i></a> -->
-              <a href="https://www.instagram.com/innova_digital_solutions/" class="instagram"><i class="bi bi-instagram fs-2"></i></a>
-              <!-- <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a> -->
-              <a aria-label="Chat on WhatsApp" href="https://wa.me/+2348022604046"> <img alt="" src="assets/img/whatsapp-icon.svg" class="whatsapp-icon" />
-              </a >
+    <!-- Solution Section -->
+    <section id="automation" class="py-20 bg-gradient-to-br from-orange-50 to-amber-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                    Website + Smart Automation = 
+                    <span class="gradient-text">More Money</span>
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    We combine high-converting websites with powerful backend automation to create systems that work 24/7.
+                </p>
             </div>
-          </div>
 
-          <div class="col-lg-2 col-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="services.html">Services</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="portfolio-details.html">Portfolio</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="pricing.html">Pricing</a></li>
-            </ul>
-          </div>
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8">
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-gradient-to-br from-orange-400 to-red-500 rounded-full flex items-center justify-center flex-shrink-0">
+                            <span class="text-white font-bold">1</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Customer Visits Your Site</h3>
+                            <p class="text-gray-600">Beautiful, responsive website that converts visitors into leads</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-gradient-to-br from-orange-400 to-red-500 rounded-full flex items-center justify-center flex-shrink-0">
+                            <span class="text-white font-bold">2</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Automation Kicks In</h3>
+                            <p class="text-gray-600">Smart workflows powered by n8n handle everything automatically</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-gradient-to-br from-orange-400 to-red-500 rounded-full flex items-center justify-center flex-shrink-0">
+                            <span class="text-white font-bold">3</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Money Flows In</h3>
+                            <p class="text-gray-600">Higher conversions, better follow-up, recovered revenue</p>
+                        </div>
+                    </div>
+                </div>
 
-          <div class="col-lg-2 col-6 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="services.html">Web Design  & Development</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="services.html">Graphics Design</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="services.html">SEO Services</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="services.html">Content Writing</a></li> 
-              <li><i class="bi bi-chevron-right"></i> <a href="services.html">Web optimization & Maintenance</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="services.html">Social Media Management</a></li>
-            </ul>
-          </div>
- <!--
-          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-            <h4>Contact Us</h4>
-            <p>
-              Festac Town<br>
-              Lagos<br>
-              Nigeria <br>
-              <strong>Phone:</strong> +234 807 406 4262<br>
-              <strong>Email:</strong> innovadigitaldesk@gmail.com
+                <div class="bg-white rounded-3xl shadow-2xl p-8 card-glow">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">What Happens Automatically:</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+                            <span class="text-gray-700">Lead added to your CRM instantly</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+                            <span class="text-gray-700">Welcome email sent immediately</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+                            <span class="text-gray-700">Team notified via WhatsApp</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+                            <span class="text-gray-700">Customer tagged for future offers</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+                            <span class="text-gray-700">Automatic follow-up if no response</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+                            <span class="text-gray-700">Abandoned cart recovery (e-commerce)</span>
+                        </div>
+                    </div>
+                    <div class="mt-6 p-4 bg-green-50 rounded-xl border border-green-200">
+                        <p class="text-green-800 font-semibold text-center">All hands-free. 24/7. Even while you sleep.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                    Everything You Need to 
+                    <span class="gradient-text">Make More Money</span>
+                </h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gradient-to-br from-orange-50 to-amber-50 p-8 rounded-3xl border border-orange-200 hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                    <div class="w-16 h-16 bg-gradient-to-br from-orange-400 to-red-500 rounded-2xl flex items-center justify-center mb-6">
+                        <span class="text-2xl">🎨</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Custom Website Design</h3>
+                    <p class="text-gray-600 mb-6">Beautiful, responsive websites that convert visitors into paying customers.</p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li>• Mobile-first responsive design</li>
+                        <li>• High-converting landing pages</li>
+                        <li>• Fast loading & SEO optimized</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gradient-to-br from-blue-50 to-indigo-50 p-8 rounded-3xl border border-blue-200 hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                    <div class="w-16 h-16 bg-gradient-to-br from-blue-400 to-indigo-500 rounded-2xl flex items-center justify-center mb-6">
+                        <span class="text-2xl">⚡</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Smart Automation</h3>
+                    <p class="text-gray-600 mb-6">n8n-powered workflows that handle leads, follow-ups, and customer nurturing automatically.</p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li>• Lead capture & CRM integration</li>
+                        <li>• Email & WhatsApp automation</li>
+                        <li>• Abandoned cart recovery</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gradient-to-br from-green-50 to-emerald-50 p-8 rounded-3xl border border-green-200 hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                    <div class="w-16 h-16 bg-gradient-to-br from-green-400 to-emerald-500 rounded-2xl flex items-center justify-center mb-6">
+                        <span class="text-2xl">📊</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Sales Pipeline</h3>
+                    <p class="text-gray-600 mb-6">Complete CRM integration with Google Sheets, Airtable, or HubSpot to track every lead.</p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li>• Real-time lead tracking</li>
+                        <li>• Sales funnel optimization</li>
+                        <li>• Monthly performance reports</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Study Section -->
+    <section class="py-20 bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                    Real Results for Real Businesses
+                </h2>
+            </div>
+
+            <div class="bg-gradient-to-r from-gray-800 to-gray-700 rounded-3xl p-12 border border-gray-600">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <div class="flex items-center space-x-4 mb-6">
+                            <div class="w-16 h-16 bg-gradient-to-br from-pink-400 to-purple-500 rounded-2xl flex items-center justify-center">
+                                <span class="text-2xl">👗</span>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold">Fashion Brand</h3>
+                                <p class="text-gray-300">E-commerce Store</p>
+                            </div>
+                        </div>
+                        <blockquote class="text-xl italic text-gray-300 mb-6">
+                            "We used to follow up manually. Now it's all automatic — and our sales have gone up!"
+                        </blockquote>
+                        <p class="text-gray-400">
+                            Our smart automation system helped them recover lost sales from customers who abandoned their shopping carts.
+                        </p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="inline-block bg-gradient-to-br from-green-400 to-emerald-500 rounded-3xl p-8">
+                            <div class="text-5xl font-bold text-white mb-2">₦200k+</div>
+                            <div class="text-green-100 text-lg">Recovered Revenue</div>
+                            <div class="text-green-200 text-sm mt-2">in just 3 months</div>
+                        </div>
+                        <div class="mt-8 grid grid-cols-2 gap-4">
+                            <div class="bg-gray-800 rounded-xl p-4">
+                                <div class="text-2xl font-bold text-orange-400">85%</div>
+                                <div class="text-gray-300 text-sm">Cart Recovery Rate</div>
+                            </div>
+                            <div class="bg-gray-800 rounded-xl p-4">
+                                <div class="text-2xl font-bold text-blue-400">3x</div>
+                                <div class="text-gray-300 text-sm">Faster Follow-up</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 bg-gradient-to-br from-orange-50 to-amber-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                    Choose Your 
+                    <span class="gradient-text">Money-Making Package</span>
+                </h2>
+                <p class="text-xl text-gray-600">Investment plans that pay for themselves</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Starter -->
+                <div class="bg-white rounded-3xl shadow-xl p-8 border border-gray-200 hover:border-orange-300 transition-all duration-300">
+                    <div class="text-center mb-8">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Starter</h3>
+                        <div class="text-4xl font-bold gradient-text mb-4">Contact Us</div>
+                        <p class="text-gray-600">Perfect for small businesses getting started</p>
+                    </div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center space-x-3">
+                            <div class="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center">
+                                <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                            <span class="text-gray-700">Custom responsive website</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <div class="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center">
+                                <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                            <span class="text-gray-700">Smart contact form</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <div class="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center">
+                                <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                            <span class="text-gray-700">Email notifications</span>
+                        </li>
+                    </ul>
+                    <button class="w-full bg-gradient-to-r from-orange-500 to-red-500 text-white py-3 rounded-full font-semibold hover:shadow-lg transition-all duration-300 transform hover:scale-105">
+                        Get Started
+                    </button>
+                </div>
+
+                <!-- Pro Automation -->
+                <div class="bg-white rounded-3xl shadow-xl p-8 border border-gray-200 hover:border-orange-300 transition-all duration-300">
+                    <div class="text-center mb-8">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Pro Automation</h3>
+                        <div class="text-4xl font-bold gradient-text mb-4">Contact Us</div>
+                        <p class="text-gray-600">Complete automation solution</p>
+                    </div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center space-x-3">
+                            <div class="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center">
+                                <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                            <span class="text-gray-700">Everything in Growth</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <div class="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center">
+                                <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                            <span class="text-gray-700">Cart recovery system</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <div class="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center">
+                                <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                            <span class="text-gray-700">Sales funnel optimization</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <div class="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center">
+                                <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                            <span class="text-gray-700">Monthly optimization</span>
+                        </li>
+                    </ul>
+                    <button class="w-full bg-gradient-to-r from-gray-400 to-gray-500 text-white py-3 rounded-full font-semibold hover:shadow-lg transition-all duration-300">
+                        Get Started
+                    </button>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <p class="text-gray-600 text-lg mb-4">
+                    <span class="font-semibold">Monthly plans available</span> for automation management & performance tweaks
+                </p>
+                <button class="bg-gradient-to-r from-orange-500 to-red-500 text-white px-8 py-4 rounded-full text-lg font-semibold hover:shadow-lg transition-all duration-300 transform hover:scale-105">
+                    Book Free Strategy Call
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                    Why Choose 
+                    <span class="gradient-text">DigitalFlow</span>
+                </h2>
+                <p class="text-xl text-gray-600">We're not here to sell you a site. We're here to help you make more money.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="text-center p-6">
+                    <div class="w-20 h-20 bg-gradient-to-br from-orange-400 to-red-500 rounded-3xl flex items-center justify-center mx-auto mb-6">
+                        <span class="text-3xl">🎯</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Stop Losing Leads</h3>
+                    <p class="text-gray-600">Never let another potential customer slip through the cracks. Our system captures and nurtures every lead automatically.</p>
+                </div>
+
+                <div class="text-center p-6">
+                    <div class="w-20 h-20 bg-gradient-to-br from-blue-400 to-indigo-500 rounded-3xl flex items-center justify-center mx-auto mb-6">
+                        <span class="text-3xl">⚡</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Follow Up Faster</h3>
+                    <p class="text-gray-600">Instant responses and smart follow-up sequences that keep your business top-of-mind with prospects.</p>
+                </div>
+
+                <div class="text-center p-6">
+                    <div class="w-20 h-20 bg-gradient-to-br from-green-400 to-emerald-500 rounded-3xl flex items-center justify-center mx-auto mb-6">
+                        <span class="text-3xl">💰</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Close More Sales</h3>
+                    <p class="text-gray-600">Higher conversion rates through personalized automation and strategic customer journey mapping.</p>
+                </div>
+
+                <div class="text-center p-6">
+                    <div class="w-20 h-20 bg-gradient-to-br from-purple-400 to-pink-500 rounded-3xl flex items-center justify-center mx-auto mb-6">
+                        <span class="text-3xl">🔄</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Recover Lost Revenue</h3>
+                    <p class="text-gray-600">Abandoned cart recovery and re-engagement campaigns that bring back customers who almost bought.</p>
+                </div>
+
+                <div class="text-center p-6">
+                    <div class="w-20 h-20 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-3xl flex items-center justify-center mx-auto mb-6">
+                        <span class="text-3xl">📊</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Understand Your Pipeline</h3>
+                    <p class="text-gray-600">Clear visibility into your sales process with detailed tracking and performance analytics.</p>
+                </div>
+
+                <div class="text-center p-6">
+                    <div class="w-20 h-20 bg-gradient-to-br from-red-400 to-pink-500 rounded-3xl flex items-center justify-center mx-auto mb-6">
+                        <span class="text-3xl">✨</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Impress Your Customers</h3>
+                    <p class="text-gray-600">Fast, modern service that makes your business look professional and trustworthy.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="py-20 bg-gradient-to-r from-orange-500 to-red-500 text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl md:text-6xl font-bold mb-6">
+                Ready to Build Something That Works While You Sleep?
+            </h2>
+            <p class="text-xl md:text-2xl mb-8 text-orange-100">
+                Stop losing money. Start making more. Let's build your money-making machine today.
             </p>
+            
+            <div class="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">
+                <button class="bg-white text-orange-500 px-8 py-4 rounded-full text-lg font-semibold hover:shadow-2xl transition-all duration-300 transform hover:scale-105 flex items-center space-x-2">
+                    <span>📞</span>
+                    <span>Book Free Strategy Call</span>
+                </button>
+                <button class="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-orange-500 transition-all duration-300 flex items-center space-x-2">
+                    <span>💬</span>
+                    <span>WhatsApp Us</span>
+                </button>
+            </div>
 
-          </div>
-End Footer -->
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <div>
+                    <div class="text-2xl font-bold mb-2">📧 Email</div>
+                    <p class="text-orange-100">hello@digitalflow.agency</p>
+                </div>
+                <div>
+                    <div class="text-2xl font-bold mb-2">🌐 Website</div>
+                    <p class="text-orange-100">www.digitalflow.agency</p>
+                </div>
+                <div>
+                    <div class="text-2xl font-bold mb-2">📱 WhatsApp</div>
+                    <p class="text-orange-100">+234 XXX XXX XXXX</p>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
+    </section>
 
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-10 h-10 bg-gradient-to-br from-orange-400 to-red-500 rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-lg">DF</span>
+                        </div>
+                        <span class="text-2xl font-bold gradient-text">DigitalFlow</span>
+                    </div>
+                    <p class="text-gray-400 mb-6 max-w-md">
+                        We build digital systems that work for you — even when you sleep. 
+                        Turn your website into a money-making machine.
+                    </p>
+                    <div class="flex space-x-4">
+                        <div class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-orange-500 transition-colors cursor-pointer">
+                            <span>📧</span>
+                        </div>
+                        <div class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-orange-500 transition-colors cursor-pointer">
+                            <span>💬</span>
+                        </div>
+                        <div class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-orange-500 transition-colors cursor-pointer">
+                            <span>🐦</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-orange-400 transition-colors">Web Design</a></li>
+                        <li><a href="#" class="hover:text-orange-400 transition-colors">Automation</a></li>
+                        <li><a href="#" class="hover:text-orange-400 transition-colors">CRM Integration</a></li>
+                        <li><a href="#" class="hover:text-orange-400 transition-colors">Email Marketing</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-orange-400 transition-colors">About Us</a></li>
+                        <li><a href="#" class="hover:text-orange-400 transition-colors">Case Studies</a></li>
+                        <li><a href="#" class="hover:text-orange-400 transition-colors">Contact</a></li>
+                        <li><a href="#" class="hover:text-orange-400 transition-colors">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center">
+                <p class="text-gray-400">
+                    © 2025 DigitalFlow Agency. All rights reserved. 
+                    <span class="text-orange-400">Built to make you money.</span>
+                </p>
+            </div>
+        </div>
+    </footer>
 
-  </footer> 
-
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
+   <script src="main.js"></script>
 </body>
-
-</html>
