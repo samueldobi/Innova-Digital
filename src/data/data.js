@@ -26,29 +26,41 @@ export const socialLinks = [
   ];
 export const plans = [
     {
-      title: "Starter",
+      title: "Web Starter",
       price: "Contact Us",
-      description: "Perfect for small businesses getting started",
+      description: "Build a powerful online presence with a fully responsive website or web application.",
       features: [
-        "Custom responsive website",
-        "Smart contact form",
-        "Email notifications",
+        "Mobile-first, high-converting website design",
+        "Search engine  optimized and fast-loading pages",
+        "Easy-to-manage content and layout",
       ],
       buttonClass:
         "bg-gradient-to-r from-orange-500 to-red-500 text-white py-3 rounded-full font-semibold hover:shadow-lg transition-all duration-300 transform hover:scale-105",
     },
     {
-      title: "Pro Automation",
+      title: "Growth Accelerator",
       price: "Contact Us",
-      description: "Complete automation solution",
+      description: "Website + targeted ads to attract, engage, and convert more customers.",
       features: [
-        "Everything in Growth",
-        "Cart recovery system",
-        "Sales funnel optimization",
-        "Monthly optimization",
+        "All features of Web Starter",
+        "Targeted ad campaigns on Google and social platforms",
+        "Real-time analytics to track performance and ROI",
+        
       ],
       buttonClass:
-        "bg-gradient-to-r from-gray-400 to-gray-500 text-white py-3 rounded-full font-semibold hover:shadow-lg transition-all duration-300",
+        "bg-gradient-to-r from-orange-500 to-red-500 text-white py-3 rounded-full font-semibold hover:shadow-lg transition-all duration-300 transform hover:scale-105",
+    },
+    {
+      title: "Ultimate Automation",
+      price: "Contact Us",
+      description: "Website + ads + smart automation to scale your business effortlessly.",
+      features: [
+        "All features of Growth Accelerator",
+        "Automated lead capture, follow-ups, and customer nurturing",
+        "CRM integration and sales pipeline optimization",
+      ],
+      buttonClass:
+        "bg-gradient-to-r from-orange-500 to-red-500 text-white py-3 rounded-full font-semibold hover:shadow-lg transition-all duration-300 transform hover:scale-105",
     },
   ];
 export const features = [
@@ -111,7 +123,63 @@ export  const buttons = [
         url: "https://wa.me/+2348022604046",
     },
   ];
+export const  painPoints = [
+  {
+    icon: "📉",
+    title: "Leads Go Nowhere",
+    titleColor: "text-red-400",
+    description: "Website visitors fill forms and disappear into the void. No follow-up, no conversion."
+  },
+  {
+    icon: "⏰",
+    title: "Slow Follow-Up",
+    titleColor: "text-red-400",
+    description: "By the time you respond, your potential customers have already moved on to competitors."
+  },
+  {
+    icon: "📧",
+    title: "Sales in Chaos",
+    titleColor: "text-red-400",
+    description: "Important deals get buried in inboxes and WhatsApp chats. Nothing gets tracked properly."
+  },
+  {
+    icon: "🔄",
+    title: "Manual Everything",
+    titleColor: "text-red-400",
+    description: "You're stuck doing repetitive tasks that don't scale, instead of growing your business."
+  }
+];
 
+export const leftSolutionList = [
+  {
+    number: 1,
+    title: "Targeted Ads",
+    description: "We Create Ads that target your ideal customer"
+  },
+  {
+    number: 2,
+    title: "Customer Visits Your Site",
+    description: "Beautiful, responsive website that converts visitors into leads"
+  },
+  {
+    number: 3,
+    title: "Automation Kicks In",
+    description: "Smart workflows  handle everything automatically"
+  },
+  {
+    number: 4,
+    title: "Money Flows In",
+    description: "Higher conversions, better follow-up, recovered revenue"
+  }
+];
+export const rightSolutionList = [
+  "Lead added to your CRM instantly",
+  "Welcome email sent immediately",
+  "Team notified via WhatsApp",
+  "Customer tagged for future offers",
+  "Automatic follow-up if no response",
+  "Abandoned cart recovery (e-commerce)"
+];
 export  const contactInfo = [
     {
       icon: "📧 Email",
@@ -414,48 +482,56 @@ export const contactMethods = [
   {
     icon: "📧",
     title: "Email Us",
-    value: "hello@yourwebagency.com",
+    value: "innovadigitaldesk@gmail.com",
     description: "Send us a message and we'll respond within 24 hours",
     action: "mailto:hello@yourwebagency.com"
   },
   {
     icon: "📱",
     title: "Call Us",
-    value: "+1 (555) 123-4567",
+    value: "+234 802 260 4046",
     description: "Speak directly with our team during business hours",
-    action: "tel:+15551234567"
+    action: "tel:+2348022604046"
   },
   {
     icon: "💬",
-    title: "Live Chat",
-    value: "Chat Support",
-    description: "Get instant answers to your questions online",
-    action: "#"
-  },
-  {
-    icon: "📍",
-    title: "Visit Us",
-    value: "123 Digital Street, Tech City, TC 12345",
-    description: "Meet us at our creative studio workspace",
-    action: "https://maps.google.com"
+    title: "WhatsApp",
+    value: "Reach Us ",
+    description: "Reach us instantly on WhatsApp for quick support",
+    action: "https://wa.me/+2348022604046"
   }
 ];
 
 export const serviceOptions = [
   "Web Design & Development",
-  "Mobile App Development",
   "E-commerce Solutions",
   "Business Automation",
-  "Digital Marketing",
-  "UI/UX Design",
-  "Custom Software",
-  "Consulting Services"
+  "CRM Integration",
+  "SEO & Digital Marketing",
+  "Meta Ads Management",
 ];
 
 export const budgetRanges = [
-  "Under $5,000",
-  "$5,000 - $15,000",
-  "$15,000 - $35,000",
-  "$35,000 - $75,000",
-  "$75,000+"
+  "Under $500",
+  "$5000 - $1,500",
+  "$1,500 - $5,000",
+  "$5,000+"
 ];
+export const faqs =[
+  {
+    q: "How long does a typical project take?",
+    a: "Project timelines vary based on complexity, typically ranging from 1-12 weeks for most projects."
+  },
+  {
+    q: "Do you offer ongoing maintenance?",
+    a: "Yes, we provide comprehensive maintenance packages to keep your website secure and up-to-date."
+  },
+  {
+    q: "What's included in your web design service?",
+    a: "Our service includes design, development, ads management, automation and training on your new website."
+  },
+  {
+    q: "Do you work with businesses outside your area?",
+    a: "Absolutely! We work with clients worldwide and have experience with remote collaboration."
+  }
+]

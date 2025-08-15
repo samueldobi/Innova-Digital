@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { contactMethods, serviceOptions, budgetRanges } from '../data/data';
+import { contactMethods, serviceOptions, budgetRanges,faqs } from '../data/data';
 
 const Contact = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -385,24 +385,7 @@ const Contact = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            {[
-              {
-                q: "How long does a typical project take?",
-                a: "Project timelines vary based on complexity, typically ranging from 2-12 weeks for most web projects."
-              },
-              {
-                q: "Do you offer ongoing maintenance?",
-                a: "Yes, we provide comprehensive maintenance packages to keep your website secure and up-to-date."
-              },
-              {
-                q: "What's included in your web design service?",
-                a: "Our service includes design, development, testing, deployment, and training on your new website."
-              },
-              {
-                q: "Do you work with businesses outside your area?",
-                a: "Absolutely! We work with clients worldwide and have experience with remote collaboration."
-              }
-            ].map((faq, index) => (
+            {faqs.map((faq, index) => (
               <div key={index} className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 border border-gray-200/50">
                 <h4 className="font-bold text-gray-900 mb-3">{faq.q}</h4>
                 <p className="text-gray-600">{faq.a}</p>

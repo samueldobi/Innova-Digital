@@ -1,4 +1,5 @@
-import { plans } from "../data/data"
+import { plans } from "../data/data";
+import { Link } from "react-router";
 
 const Pricing = () => {
   return (
@@ -58,9 +59,11 @@ const Pricing = () => {
                           </li>
                         ))}
                       </ul>
-                      <button className={`w-full ${plan.buttonClass}`}>
+                      <Link to="/contact" className="w-full">
+                        <button className={`w-full ${plan.buttonClass}`}>
                         Get Started
                       </button>
+                       </Link>
                     </div>
                   ))}
                 </div>
@@ -72,7 +75,7 @@ const Pricing = () => {
                     automation management & performance tweaks
                   </p>
                   <button className="bg-gradient-to-r from-orange-500 to-red-500 text-white px-8 py-4 rounded-full text-lg font-semibold hover:shadow-lg transition-all duration-300 transform hover:scale-105">
-                    Book Free Strategy Call
+                    Contact Us
                   </button>
                 </div>
               </div>

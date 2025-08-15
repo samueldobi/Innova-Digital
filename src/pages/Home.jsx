@@ -1,6 +1,7 @@
-import {  features, buttons, contactInfo } from "../data/data";
+import {  features, buttons, contactInfo, leftSolutionList, rightSolutionList,painPoints } from "../data/data";
 import { Link } from "react-router";
 import Form from "../components/Form";
+
 
 const Home = () => {
 
@@ -24,6 +25,8 @@ const Home = () => {
             <span className="text-white text-xl">📈</span>
           </div>
 
+          
+          {/* Hero Content */}
           <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <div className="animate-slide-up">
               <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 leading-tight">
@@ -69,57 +72,22 @@ const Home = () => {
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-              <div className="bg-gray-800 p-6 rounded-2xl border border-gray-700 hover:border-red-500 transition-all duration-300 transform hover:scale-105">
-                <div className="w-12 h-12 bg-red-500 rounded-lg flex items-center justify-center mb-4">
-                  <span className="text-2xl">📉</span>
+               {painPoints.map((item, index) => (
+                <div
+                  key={index}
+                  className="bg-gray-800 p-6 rounded-2xl border border-gray-700 hover:border-red-500 transition-all duration-300 transform hover:scale-105"
+                >
+                  <div className="w-12 h-12 bg-red-500 rounded-lg flex items-center justify-center mb-4">
+                    <span className="text-2xl">{item.icon}</span>
+                  </div>
+                  <h3 className={`text-xl font-semibold mb-3 ${item.titleColor}`}>
+                    {item.title}
+                  </h3>
+                  <p className="text-gray-300">{item.description}</p>
                 </div>
-                <h3 className="text-xl font-semibold mb-3 text-red-400">
-                  Leads Go Nowhere
-                </h3>
-                <p className="text-gray-300">
-                  Website visitors fill forms and disappear into the void. No follow-up,
-                  no conversion.
-                </p>
-              </div>
+              ))}
+             
 
-              <div className="bg-gray-800 p-6 rounded-2xl border border-gray-700 hover:border-red-500 transition-all duration-300 transform hover:scale-105">
-                <div className="w-12 h-12 bg-red-500 rounded-lg flex items-center justify-center mb-4">
-                  <span className="text-2xl">⏰</span>
-                </div>
-                <h3 className="text-xl font-semibold mb-3 text-red-400">
-                  Slow Follow-Up
-                </h3>
-                <p className="text-gray-300">
-                  By the time you respond, your potential customers have already moved
-                  on to competitors.
-                </p>
-              </div>
-
-              <div className="bg-gray-800 p-6 rounded-2xl border border-gray-700 hover:border-red-500 transition-all duration-300 transform hover:scale-105">
-                <div className="w-12 h-12 bg-red-500 rounded-lg flex items-center justify-center mb-4">
-                  <span className="text-2xl">📧</span>
-                </div>
-                <h3 className="text-xl font-semibold mb-3 text-red-400">
-                  Sales in Chaos
-                </h3>
-                <p className="text-gray-300">
-                  Important deals get buried in inboxes and WhatsApp chats. Nothing gets
-                  tracked properly.
-                </p>
-              </div>
-
-              <div className="bg-gray-800 p-6 rounded-2xl border border-gray-700 hover:border-red-500 transition-all duration-300 transform hover:scale-105">
-                <div className="w-12 h-12 bg-red-500 rounded-lg flex items-center justify-center mb-4">
-                  <span className="text-2xl">🔄</span>
-                </div>
-                <h3 className="text-xl font-semibold mb-3 text-red-400">
-                  Manual Everything
-                </h3>
-                <p className="text-gray-300">
-                  You're stuck doing repetitive tasks that don't scale, instead of
-                  growing your business.
-                </p>
-              </div>
             </div>
           </div>
         </div>
@@ -128,12 +96,12 @@ const Home = () => {
         <div className="py-20 bg-gradient-to-br from-orange-50 to-amber-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-                Website + Smart Automation ={" "}
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                Website + Smart Automation + Targeted Ads ={" "}
                 <span className="gradient-text">More Money</span>
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                We combine high-converting websites with powerful backend automation to
+                We combine high-converting websites with powerful backend automation and targeted ads to
                 create systems that work 24/7.
               </p>
             </div>
@@ -141,47 +109,18 @@ const Home = () => {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               {/* Left Steps */}
               <div className="space-y-8">
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-orange-400 to-red-500 rounded-full flex items-center justify-center flex-shrink-0">
-                    <span className="text-white font-bold">1</span>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                      Customer Visits Your Site
-                    </h3>
-                    <p className="text-gray-600">
-                      Beautiful, responsive website that converts visitors into leads
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-orange-400 to-red-500 rounded-full flex items-center justify-center flex-shrink-0">
-                    <span className="text-white font-bold">2</span>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                      Automation Kicks In
-                    </h3>
-                    <p className="text-gray-600">
-                      Smart workflows powered by n8n handle everything automatically
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-orange-400 to-red-500 rounded-full flex items-center justify-center flex-shrink-0">
-                    <span className="text-white font-bold">3</span>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                      Money Flows In
-                    </h3>
-                    <p className="text-gray-600">
-                      Higher conversions, better follow-up, recovered revenue
-                    </p>
-                  </div>
-                </div>
+                {leftSolutionList.map((step) => (
+                    <div key={step.number} className="flex items-start space-x-4">
+                      <div className="w-12 h-12 bg-gradient-to-br from-orange-400 to-red-500 rounded-full flex items-center justify-center flex-shrink-0">
+                        <span className="text-white font-bold">{step.number}</span>
+                      </div>
+                      <div>
+                        <h3 className="text-xl font-semibold text-gray-900 mb-2">{step.title}</h3>
+                        <p className="text-gray-600">{step.description}</p>
+                      </div>
+                    </div>
+                  ))}
+               
               </div>
 
               {/* Right Automation List */}
@@ -190,38 +129,13 @@ const Home = () => {
                   What Happens Automatically:
                 </h3>
                 <div className="space-y-4">
-                  <div className="flex items-center space-x-3">
-                    <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                    <span className="text-gray-700">
-                      Lead added to your CRM instantly
-                    </span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                    <span className="text-gray-700">Welcome email sent immediately</span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                    <span className="text-gray-700">Team notified via WhatsApp</span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                    <span className="text-gray-700">
-                      Customer tagged for future offers
-                    </span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                    <span className="text-gray-700">
-                      Automatic follow-up if no response
-                    </span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                    <span className="text-gray-700">
-                      Abandoned cart recovery (e-commerce)
-                    </span>
-                  </div>
+                  {rightSolutionList.map((step, index) => (
+                    <div key={index} className="flex items-center space-x-3">
+                      <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                      <span className="text-gray-700">{step}</span>
+                    </div>
+                  ))}
+                
                 </div>
                 <div className="mt-6 p-4 bg-green-50 rounded-xl border border-green-200">
                   <p className="text-green-800 font-semibold text-center">
@@ -298,6 +212,7 @@ const Home = () => {
             </ul>
           </div>
         </div>
+
       </div>
         </div>
 
@@ -319,7 +234,7 @@ const Home = () => {
                   <span className="text-2xl">👗</span>
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold">Fashion Brand</h3>
+                  <h3 className="text-2xl font-bold">BKWL STEPZ</h3>
                   <p className="text-gray-300">E-commerce Store</p>
                 </div>
               </div>
@@ -328,22 +243,22 @@ const Home = () => {
                 sales have gone up!"
               </blockquote>
               <p className="text-gray-400">
-                Our smart automation system helped them recover lost sales from
-                customers who abandoned their shopping carts.
+                Our smart automation system and our targeted ads  helped them increase sales from
+                customers.
               </p>
             </div>
 
             {/* Right Side */}
             <div className="text-center">
               <div className="inline-block bg-gradient-to-br from-green-400 to-emerald-500 rounded-3xl p-8">
-                <div className="text-5xl font-bold text-white mb-2">₦200k+</div>
-                <div className="text-green-100 text-lg">Recovered Revenue</div>
-                <div className="text-green-200 text-sm mt-2">in just 3 months</div>
+                <div className="text-5xl font-bold text-white mb-2">40%</div>
+                <div className="text-green-100 text-lg">Increase In Revenue</div>
+                <div className="text-green-200 text-sm mt-2">In just 3 months</div>
               </div>
               <div className="mt-8 grid grid-cols-2 gap-4">
                 <div className="bg-gray-800 rounded-xl p-4">
-                  <div className="text-2xl font-bold text-orange-400">85%</div>
-                  <div className="text-gray-300 text-sm">Cart Recovery Rate</div>
+                  <div className="text-2xl font-bold text-orange-400">65%</div>
+                  <div className="text-gray-300 text-sm">Cart Conversion Rate</div>
                 </div>
                 <div className="bg-gray-800 rounded-xl p-4">
                   <div className="text-2xl font-bold text-blue-400">3x</div>
@@ -359,7 +274,7 @@ const Home = () => {
        
 
         {/*  Why Choose Us*/}
-        <div className="why-choosepy-20 bg-white">
+        <div className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
@@ -421,47 +336,7 @@ const Home = () => {
             </div>
 
             {/* Contact Form */}
-            {/* <form
-              action="https://lemonchiffon-magpie-532997.hostingersite.com/mailer/submitform.php"
-              method="POST"
-              className="bg-white text-gray-900 rounded-xl p-8 shadow-lg max-w-xl mx-auto mb-12"
-            >
-              <div className="mb-4">
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="Your Name"
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500"
-                  required
-                />
-              </div>
-              <div className="mb-4">
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Your Email"
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500"
-                  required
-                />
-              </div>
-              <div className="mb-4">
-                <textarea
-                  name="message"
-                  placeholder="Your Message"
-                  rows="4"
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500"
-                  required
-                ></textarea>
-              </div>
-              <button
-                type="submit"
-                className="w-full bg-orange-500 text-white font-semibold py-3 rounded-lg hover:bg-orange-600 transition duration-300"
-              >
-                Send Message
-              </button>
-            </form>   */}
                   <Form />
-
             {/* Contact Info */}
             <div className="grid md:grid-cols-3 gap-8 text-center">
               {contactInfo.map((info, index) => (
