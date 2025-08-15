@@ -243,8 +243,8 @@ const Home = () => {
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div className="bg-gradient-to-br from-orange-50 to-amber-50 p-8 rounded-3xl border border-orange-200 hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+        <div className=" grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="  bg-gradient-to-br from-orange-50 to-amber-50 p-8 rounded-3xl border border-orange-200 hover:shadow-xl transition-all duration-300 transform hover:scale-105">
             <div className="w-16 h-16 bg-gradient-to-br from-orange-400 to-red-500 rounded-2xl flex items-center justify-center mb-6">
               <span className="text-2xl">🎨</span>
             </div>
@@ -262,7 +262,7 @@ const Home = () => {
             </ul>
           </div>
 
-          <div className="bg-gradient-to-br from-blue-50 to-indigo-50 p-8 rounded-3xl border border-blue-200 hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+          <div className="  bg-gradient-to-br from-blue-50 to-indigo-50 p-8 rounded-3xl border border-blue-200 hover:shadow-xl transition-all duration-300 transform hover:scale-105">
             <div className="w-16 h-16 bg-gradient-to-br from-blue-400 to-indigo-500 rounded-2xl flex items-center justify-center mb-6">
               <span className="text-2xl">⚡</span>
             </div>
@@ -280,7 +280,7 @@ const Home = () => {
             </ul>
           </div>
 
-          <div className="bg-gradient-to-br from-green-50 to-emerald-50 p-8 rounded-3xl border border-green-200 hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+          <div className="  bg-gradient-to-br from-green-50 to-emerald-50 p-8 rounded-3xl border border-green-200 hover:shadow-xl transition-all duration-300 transform hover:scale-105">
             <div className="w-16 h-16 bg-gradient-to-br from-green-400 to-emerald-500 rounded-2xl flex items-center justify-center mb-6">
               <span className="text-2xl">📊</span>
             </div>
