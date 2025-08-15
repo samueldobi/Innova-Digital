@@ -10,9 +10,9 @@ const Footer = () => {
           <div className="md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
               <div className="w-10 h-10 bg-gradient-to-br from-orange-400 to-red-500 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">DF</span>
+                <span className="text-white font-bold text-lg">N</span>
               </div>
-              <span className="text-2xl font-bold gradient-text">DigitalFlow</span>
+              <span className="text-2xl font-bold gradient-text">Nova</span>
             </div>
             <p className="text-gray-400 mb-6 max-w-md">
               We build digital systems that work for you — even when you sleep.
@@ -56,7 +56,7 @@ const Footer = () => {
         {/* Footer Bottom */}
         <div className="border-t border-gray-800 mt-12 pt-8 text-center">
           <p className="text-gray-400">
-            © 2025 DigitalFlow Agency. All rights reserved.{" "}
+            © 2023 Nova Agency. All rights reserved.{" "}
             <span className="text-orange-400">Built to make you money.</span>
           </p>
         </div>

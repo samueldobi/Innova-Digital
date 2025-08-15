@@ -98,30 +98,32 @@ export const features = [
 export  const buttons = [
     {
       icon: "📞",
-      text: "Book Free Strategy Call",
+      text: " Call Us",
       classes:
         "bg-white text-orange-500 px-8 py-4 rounded-full text-lg font-semibold hover:shadow-2xl transition-all duration-300 transform hover:scale-105 flex items-center space-x-2",
+      url: "tel:+2348022604046",
     },
     {
       icon: "💬",
       text: "WhatsApp Us",
       classes:
         "border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-orange-500 transition-all duration-300 flex items-center space-x-2",
+        url: "https://wa.me/+2348022604046",
     },
   ];
 
 export  const contactInfo = [
     {
       icon: "📧 Email",
-      detail: "hello@digitalflow.agency",
+      detail: "innovadigitaltech@gmail.com",
     },
     {
       icon: "🌐 Website",
-      detail: "www.digitalflow.agency",
+      detail: "www.innovadigitaltech.com",
     },
     {
       icon: "📱 WhatsApp",
-      detail: "+234 XXX XXX XXXX",
+      detail: "+234 801 234 5678",
     },
   ];
 export const servicesList = [

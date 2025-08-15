@@ -1,4 +1,5 @@
-import {  features, buttons, contactInfo } from "../data/data"
+import {  features, buttons, contactInfo } from "../data/data";
+import { Link } from "react-router";
 
 const Home = () => {
 
@@ -406,7 +407,11 @@ const Home = () => {
               {buttons.map((btn, index) => (
                 <button key={index} className={btn.classes}>
                   <span>{btn.icon}</span>
-                  <span>{btn.text}</span>
+                  <span>
+                    <Link to={btn.url}>
+                      {btn.text}
+                    </Link>
+                    </span>
                 </button>
               ))}
             </div>

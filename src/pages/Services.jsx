@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { servicesList } from '../data/data'; 
+import { Link } from 'react-router';
 
 const Services = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -128,7 +129,9 @@ const Services = () => {
         {/* Bottom CTA */}
         <div className={`text-center mt-20 transition-all duration-1000 delay-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <button className="group relative px-8 py-4 bg-gradient-to-br from-orange-400 to-red-500 rounded-full text-white font-semibold overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/25">
+          <Link to="/contact">
             <span className="relative z-10">Contact Us</span>
+          </Link>
             <div className="absolute inset-0 bg-gradient-to-br from-orange-600 to-red-800  opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             <div className="absolute inset-0 bg-white/10 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
           </button>
