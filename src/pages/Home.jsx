@@ -358,12 +358,12 @@ const Home = () => {
        
 
         {/*  Why Choose Us*/}
-        <div className="py-20 bg-white">
+        <div className="why-choosepy-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Why Choose <span className="gradient-text">DigitalFlow</span>
+            Why Choose <span className="gradient-text">Nova</span>
           </h2>
           <p className="text-xl text-gray-600">
             We're not here to sell you a site. We're here to help you make more
@@ -372,7 +372,7 @@ const Home = () => {
         </div>
 
         {/* Feature Cards */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className=" grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature, index) => (
             <div key={index} className="text-center p-6">
               <div

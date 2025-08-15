@@ -88,30 +88,31 @@ const Navbar = () => {
       {/* Mobile Dropdown Menu with Smooth Animation */}
       <div
         className={`md:hidden overflow-hidden transition-all duration-500 ease-in-out ${
-          menuOpen ? "max-h-60 opacity-100" : "max-h-0 opacity-0"
+          menuOpen ? "max-h-80 opacity-100" : "max-h-0 opacity-0"
         }`}
       >
-        <div className="flex flex-col items-start px-4 py-2 space-y-2 bg-white border-t border-gray-200">
-         <Link to ="/"
-            href="#services"
+        <div className="flex flex-col items-start px-4 py-2 space-y-6 bg-white border-t border-gray-200">
+         <Link to ="/services"
             className="text-gray-600 hover:text-orange-500 transition-colors w-full"
           >
             Services
           </Link>
-         <Link to ="/"
-            href="#automation"
+         <Link to ="/portfolio"
+            className="text-gray-600 hover:text-orange-500 transition-colors w-full"
+          >
+            Portfolio
+          </Link>
+         <Link to ="/automation"
             className="text-gray-600 hover:text-orange-500 transition-colors w-full"
           >
             Automation
           </Link>
-         <Link to ="/"
-            href="#pricing"
+         <Link to ="/pricing"
             className="text-gray-600 hover:text-orange-500 transition-colors w-full"
           >
             Pricing
           </Link>
-         <Link to ="/"
-            href="#contact"
+         <Link to ="/contact"
             className="bg-gradient-to-r from-orange-500 to-red-500 text-white px-6 py-2 rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105 w-full text-center"
           >
             Get Started
