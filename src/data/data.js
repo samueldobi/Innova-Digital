@@ -149,6 +149,12 @@ export const servicesList = [
       "Launch your online store with features that drive sales, from secure payments to smooth user experiences and modern UI design.",
     icon: "🛒",
   },
+  {
+    title: "Meta Ads Management",
+    description:
+      "Create Adverts that convert  website vistors to buying customers.",
+    icon: "📈",
+  },
 ];
 export const links = [
   {text: "Home", url: "/services" },
