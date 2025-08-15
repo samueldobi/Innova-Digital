@@ -1,5 +1,6 @@
 import {  features, buttons, contactInfo } from "../data/data";
 import { Link } from "react-router";
+import Form from "../components/Form";
 
 const Home = () => {
 
@@ -387,12 +388,15 @@ const Home = () => {
             </div>
           ))}
         </div>
+
       </div>
         </div>
         {/* Call To Action */}
         
         <div className="py-20 bg-gradient-to-r from-orange-500 to-red-500 text-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        {/* Form i just added  */}
+
             {/* Heading */}
             <h2 className="text-4xl md:text-6xl font-bold mb-6">
               Ready to Build Something That Works While You Sleep?
@@ -417,7 +421,7 @@ const Home = () => {
             </div>
 
             {/* Contact Form */}
-            <form
+            {/* <form
               action="https://lemonchiffon-magpie-532997.hostingersite.com/mailer/submitform.php"
               method="POST"
               className="bg-white text-gray-900 rounded-xl p-8 shadow-lg max-w-xl mx-auto mb-12"
@@ -455,7 +459,8 @@ const Home = () => {
               >
                 Send Message
               </button>
-            </form>
+            </form>   */}
+                  <Form />
 
             {/* Contact Info */}
             <div className="grid md:grid-cols-3 gap-8 text-center">

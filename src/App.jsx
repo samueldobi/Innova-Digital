@@ -7,6 +7,7 @@ import Pricing from "./pages/Pricing";
 import Portfolio from "./pages/Portfolio";
 import Automation from "./pages/Automation";
 import Contact from "./pages/Contact";
+import Success from "./pages/Success";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/automation" element={<Automation />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/success" element={<Success />} />
       </Routes>
       <Footer />
     </>
