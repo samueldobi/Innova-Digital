@@ -1,8 +1,11 @@
 import { useState, useEffect } from 'react';
 import { contactMethods, serviceOptions, budgetRanges,faqs } from '../data/data';
+import { sendMail } from '../utilities/sendMail';
+import SuccessPopup from '../pages/Success';
 
 const Contact = () => {
   const [isVisible, setIsVisible] = useState(false);
+   const [showSuccess, setShowSuccess] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -27,10 +30,26 @@ const Contact = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Form will be submitted to the dummy action URL
-    console.log('Form submitted:', formData);
+    try{
+      const res = await sendMail(formData);
+      console.log('Form submitted:', res);
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        company: '',
+        service: '',
+        budget: '',
+        timeline: '',
+        message: ''
+      });
+      // alert('Your message has been sent successfully!');
+      setShowSuccess(true);
+    }catch(error){
+      console.log('Error sending mail:', error);
+    }
   };
 
   return (
@@ -158,7 +177,7 @@ const Contact = () => {
                 </p>
               </div>
 
-              <form action="https://dummy-form-endpoint.com/contact" method="POST" onSubmit={handleSubmit} className="space-y-6">
+              <form  method="POST" onSubmit={handleSubmit} className="space-y-6">
                 
                 {/* Name and Email Row */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -376,6 +395,8 @@ const Contact = () => {
             </div>
           </div>
         </div>
+        {/* Success Popup */}
+          <SuccessPopup show={showSuccess} onClose={() => setShowSuccess(false)} />
 
         {/* FAQ Section */}
         <div className={`mt-20 transition-all duration-1000 delay-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
