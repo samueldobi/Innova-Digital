@@ -45,7 +45,6 @@ const Contact = () => {
         timeline: '',
         message: ''
       });
-      // alert('Your message has been sent successfully!');
       setShowSuccess(true);
     }catch(error){
       console.log('Error sending mail:', error);

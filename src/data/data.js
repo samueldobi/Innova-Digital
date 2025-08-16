@@ -484,7 +484,7 @@ export const contactMethods = [
     title: "Email Us",
     value: "innovadigitaldesk@gmail.com",
     description: "Send us a message and we'll respond within 24 hours",
-    action: "mailto:hello@yourwebagency.com"
+    action: "innovadigitaldesk@gmail.com"
   },
   {
     icon: "📱",
@@ -513,7 +513,7 @@ export const serviceOptions = [
 
 export const budgetRanges = [
   "Under $500",
-  "$5000 - $1,500",
+  "$500 - $1,500",
   "$1,500 - $5,000",
   "$5,000+"
 ];
