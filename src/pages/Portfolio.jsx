@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { portfolioProjects,categoryColors } from '../data/data';
+import { Link } from 'react-router';
 
 
 const Portfolio = () => {
@@ -218,10 +219,12 @@ const Portfolio = () => {
           <div className="bg-gradient-to-r from-orange-500 to-red-500 rounded-3xl p-12 text-white">
             <h2 className="text-4xl font-bold mb-4">Ready to Start Your Project?</h2>
             <p className="text-xl mb-8 opacity-90">Let's create something amazing together</p>
+            <Link to="/contact">
             <button className="group relative px-8 py-4 bg-white text-orange-600 rounded-full font-bold overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-xl">
               <span className="relative z-10">Get In Touch</span>
               <div className="absolute inset-0 bg-orange-100 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
             </button>
+            </Link>
           </div>
         </div>
       </div>
