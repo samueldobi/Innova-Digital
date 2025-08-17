@@ -22,21 +22,10 @@ Smooth animations and hover effects for an engaging user experience
 
 # Technologies Used
 
-Frontend:
+# Frontend: 
+React.js, Tailwind CSS, React Router
 
-React.js
-
-Tailwind CSS
-
-React Router
-
-Backend:
-
-Node.js
-
-Express.js
-
-Axios
+Backend: Node.js, Express.js, Nodemailer.js
 
 Others:
 
